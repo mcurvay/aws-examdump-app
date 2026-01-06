@@ -1,0 +1,27 @@
+.git
+.gitignore
+.idea
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+*.log
+.DS_Store
+test_pdf.py
+parse_questions.py
+parse_questions_from_pdf.py
+analyze_domains.py
+start_server.sh
+AWS SAA-03 Solution.txt
+AWS Certified Solutions Architect Associate SAA-C03.pdf
+README.md
+README_APP.md
+NASIL_CALISTIRILIR.md
+SPACED_REPETITION.md
+*.md
+!README.md
+

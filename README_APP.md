@@ -27,6 +27,30 @@ Bu uygulama, AWS SAA-C03 sınavına hazırlık için interaktif bir soru çözü
 
 ## Kullanım
 
+### Docker ile Çalıştırma (Önerilen) 🐳
+
+En kolay yöntem Docker kullanmaktır:
+
+```bash
+# Docker Hub'dan çek ve çalıştır
+docker run -d -p 8080:80 --name aws-exam-app mcurvay/aws-examdump-app:latest
+```
+
+Tarayıcıda `http://localhost:8080` adresine gidin.
+
+**Durdurmak için:**
+```bash
+docker stop aws-exam-app
+docker rm aws-exam-app
+```
+
+**Docker Compose ile:**
+```bash
+docker-compose up -d
+```
+
+Detaylı Docker kullanımı için [DOCKER.md](DOCKER.md) dosyasına bakın.
+
 ### Yerel Sunucu ile Çalıştırma
 
 JSON dosyalarını yüklemek için bir web sunucusu gereklidir. Aşağıdaki yöntemlerden birini kullanabilirsiniz:
