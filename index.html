@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS SAA-C03 Soru Çözüm Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AWS SAA-C03 Soru Çözüm Uygulaması</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Doğru:</span>
+                    <span class="stat-value correct" id="correct-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Yanlış:</span>
+                    <span class="stat-value wrong" id="wrong-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Toplam:</span>
+                    <span class="stat-value" id="total-count">0</span>
+                </div>
+            </div>
+            <div class="reset-container">
+                <button class="btn btn-reset" id="reset-button" onclick="resetSessionStats()" title="Doğru/Yanlış sayılarını sıfırla">
+                    🎯 Testi Bitir ve Sıfırla
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="question-container" id="question-container">
+                <div class="question-header">
+                    <span class="question-number" id="question-number">Soru #1</span>
+                    <span class="question-progress" id="question-progress"></span>
+                </div>
+                
+                <div class="question-text" id="question-text">
+                    Soru yükleniyor...
+                </div>
+
+                <div class="domain-badge" id="domain-badge" style="display: none;">
+                    <span class="domain-label">Domain:</span>
+                    <span class="domain-name" id="domain-name"></span>
+                </div>
+
+                <div class="options-container" id="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+
+                <div class="feedback-container" id="feedback-container" style="display: none;">
+                    <div class="feedback-message" id="feedback-message"></div>
+                    <div class="solution-container" id="solution-container" style="display: none;">
+                        <h3>Çözüm:</h3>
+                        <div class="solution-text" id="solution-text"></div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" id="check-button" onclick="checkAnswer()" style="display: none;">
+                        Cevabı Kontrol Et
+                    </button>
+                    <button class="btn btn-secondary" id="next-button" onclick="nextQuestion()" style="display: none;">
+                        Sonraki Soru
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
